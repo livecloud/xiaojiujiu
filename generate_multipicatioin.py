@@ -13,5 +13,5 @@ for i in range (1, 10):
 
 result_list = list(result)
 random.shuffle(result_list)
-for line in result_list:
-    print (line)
+for line in range(int((len(result_list)-1)/3)):
+    print (f"{result_list[line]:<25}{result_list[line+1]:<25}{result_list[line+2]}")
